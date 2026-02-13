@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Multiverse Engine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@600&family=Cinzel:wght@600&family=Oswald:wght@600&family=Playfair+Display:wght@600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: black;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Background Canvas */
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Main UI Layer */
+.ui-layer {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+  text-align: center;
+  padding: 100px 40px;
+  color: white;
+}
+
+/* Title Wrapper Retained */
+.title-wrapper {
+  padding: 20px 50px;
+  border-radius: 20px;
+  background: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(15px);
+}
+
+h2 {
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 8px;
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 20px #fff,
+    0 0 40px #ff00ff,
+    0 0 80px #00ffff;
+}
+
+/* Card */
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+  padding: 50px;
+  border-radius: 25px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255,255,255,0.2);
+
+  box-shadow:
+    0 0 60px rgba(255,0,255,0.4),
+    0 0 120px rgba(0,255,255,0.3);
+}
+
+/* Image Column */
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.image-column img {
+  width: 260px;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: saturate(1.4) contrast(1.1);
+  transition: transform 0.4s ease;
+}
+
+.image-column img:hover {
+  transform: scale(1.05);
+}
+
+/* Text Content */
+.card-content {
+  flex: 1;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.card-content strong {
+  color: #ff66ff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-column img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .card-content {
+    text-align: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="ui-layer">
+
+  <div class="title-wrapper">
+    <h2>I LOVE YOUU MUDHUUU...</h2>
+  </div>
+
+  <div class="card">
+
+    <div class="image-column">
+      <img src="./WhatsApp Image 2026-02-13 at 22.54.26-2.jpeg" alt="Memory 1">
+      <img src="./WhatsApp Image 2026-02-13 at 22.54.26.jpeg" alt="Memory 2">
+      <img src="./WhatsApp Image 2026-02-13 at 22.54.25-2.jpeg" alt="Memory 3">
+      <img src="./WhatsApp Image 2026-02-13 at 22.54.25.jpeg" alt="Memory 4">
+    </div>
+
+    <div class="card-content">
+      <p>
+        Mudhuu, Happy Valentine's Day! I hope this is just reminder of how much I love you mudhuu. You are the most amazing person darling. I know we fight a lot, I know we fight a lot nowadays, but that doesnt mean that i do not love you any less.
+        My heart is always with you. You are my world, everything we have done is special to me, being with you forever is my life goal. This life or the next or the one after that also i want to be with you.
+        Your happiness is my priority, your smile is my sunshine, your love is my fuel. I am so grateful to have you in my life, and I promise to always cherish and adore you. I love you more than words can express ma. Please be with me whatever ma. I promise to always be there for you in your tough times kutty.
+        I might tell a thousand things, i might behave thousand different ways with everyone else
+        <strong> But with you, I am always me</strong> I really thank you for allowing me to be free ma. you give me the comfort and care which i always craved for. <strong>I want you to know, that i know you do care, you do understand me. Kutty nin tara the one who values me, who loves me i will never find mudhuu.</strong>
+        I really know how much you love me. I want you to know that i love you more than that, you mean everything to me. your hapiness means everything to me. Kutty i always thank you for that. Your are the only one who truly wishes for my best. i really do not know how to thank you for that. I am not great with writing as you can see, i have lost touch.
+        But know this. your happiness is my happiness, your pain is my pain, your dreams are my dreams, your smile is all i care about. I will always be here for you, through thick and thin, through all the ups and downs of life. I love you more than anything in this world, and I am so grateful to have you as my partner.
+        I love you mudhuu. I will strive to become a better person for you and for us mudhuu. I will surely keep you happy whatever it takes. My words are getting jumbled. But mudhuu i love you, you are my everything, i need you, i cannot do anything without you.
+        I will go mad without you. Your are my everything. I do recognize everything you do for me, Thanks for everything kutty. Please continue the same way, be with me whatever happens, lets stay fix and fight and be together but never leave each other.
+        <strong> I LOVE YOUUU KUTTYYY...</strong> Happy Valentine's to my love, my moon, my sun, my everything, my strenght.
+
+        Whatever happens i am sure and confident ma, that after you came to my life and i am not alone anymore, I have you i am sure, and i will be there for you. So, while you are here, i want to spend and make the most of it before we meet after 1 and half or 2 years or so in US.
+        So starting from now, let us enjoy every moment, with each other, i promise to do everything which you love, i will continue to be your man forever. I am sorry for everything whatever has happened. Let us start our happy life. Let us be happy together.
+
+        Please be with me forever, I cannot imagine a life without you. 
+        
+        I love you sooooo much kutty, your my world, my everything
+
+        I love you kutty.
+
+        This will be the start of treating you properly as i should treat you. I will make sure that your always seen, appreciatted and treated the way you should be
+
+        You are my girl, my love and my life, also will be my wife
+
+        <strong>There is no Devi without Shreyanka rememeber</strong>
+
+        So with all these jumbled words, i just want to say, I LOVE YOUUU KUTTY, I LOVE YOUUU MUDHUU, I LOVE YOUUUU DARLING, I LOVE YOUUUU, I LOVE YOUUUU MY LIFE, MY WORLD, MY EVERYTHING. Happy Valentine's Day my love.
+
+        Let us start our new life, please accept this as my request for a new start
+        A new start to our relationship, a new start to our love, a new start to our life together. I promise to make it the best one ever, with you by my side, i can conquer the world. I love you so much kutty, I cannot wait to see you again and hold you in my arms. Until then, please take care of yourself and know that I am always thinking of you and loving you with all my heart.
+
+        Lets be happy together forever and always together.
+
+        i belong with you in your arms and you also with <menu>
+        
+
+        <strong>I love youuuuuuuuuuuuuuuuuu Kuttyyyyyy {heart emoji for my kuttyyy}</strong>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
+
