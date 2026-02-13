@@ -110,3 +110,31 @@ animate()
 window.addEventListener("resize", () => {
   renderer.setSize(window.innerWidth, window.innerHeight)
 })
+
+/* ---------------- Music Button ---------------- */
+
+const musicBtn = document.getElementById("text")
+const bgMusic = document.getElementById("bgMusic")
+
+if (musicBtn && bgMusic) {
+  musicBtn.addEventListener("click", () => {
+    if (bgMusic.paused) {
+      bgMusic.volume = 0
+      bgMusic.play()
+
+      // Smooth fade in
+      let fade = setInterval(() => {
+        if (bgMusic.volume < 1) {
+          bgMusic.volume += 0.05
+        } else {
+          clearInterval(fade)
+        }
+      }, 100)
+
+      musicBtn.textContent = "⏸ Pause Our Song"
+    } else {
+      bgMusic.pause()
+      musicBtn.textContent = "▶ Play Our Song"
+    }
+  })
+}

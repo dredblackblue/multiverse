@@ -109,6 +109,30 @@ h2 {
 .card-content strong {
   color: #ff66ff;
 }
+.music-btn {
+  padding: 18px 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  color: black;
+
+  box-shadow:
+    0 0 20px #ff00ff,
+    0 0 40px #00ffff;
+
+  transition: all 0.3s ease;
+}
+
+.music-btn:hover {
+  transform: scale(1.1);
+  box-shadow:
+    0 0 30px #ff00ff,
+    0 0 60px #00ffff;
+}
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -136,6 +160,11 @@ h2 {
   <div class="title-wrapper">
     <h2>I LOVE YOUU MUDHUUU...</h2>
   </div>
+  <button id="text" class="music-btn">
+  ▶ Play Our Song
+  </button>
+
+  <audio id="bgMusic" src="/music/Spider-Man_Across_the_Spider-Verse_Hummingbird_-_Metro_Boomin,_James_Blake_(Official_Music_Video)_128k.mp3" preload="auto"></audio>
 
   <div class="card">
 
